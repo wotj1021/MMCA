@@ -1,0 +1,81 @@
+<html>
+<head>
+<script language="javascript">
+
+function listen(seq) {
+window.open('http://xxx/player.php?asx='+seq,'player','width=350,height=130');
+}
+
+function listen_choice() {
+    var seq;
+    seq="";
+ 
+    for(cnt=0;cnt<5;cnt++)
+    {
+        if (document.all.ckeckbox1[cnt].checked==true) {
+            seq=seq+document.all.ckeckbox1[cnt].value+".";
+        }
+
+    }
+    if (seq!="") {
+        seq=seq.substring(0,seq.length-1);
+        alert(seq);
+        //window.open('http://xxx/player.php?asx='+seq,'player','width=350,height=130');
+    }
+    else {
+        alert("곡을 선택하세요.");
+    }
+}
+
+function choice_all()
+{
+    for(cnt=0;cnt<5;cnt++)
+    {
+        if (document.all.ckeckbox1[cnt].checked!=true) {
+            document.all.ckeckbox1[cnt].checked = true;
+        }
+
+    }
+}
+
+function choice_not()
+{
+    for(cnt=0;cnt<5;cnt++)
+    {
+        if (document.all.ckeckbox1[cnt].checked==true) {
+            document.all.ckeckbox1[cnt].checked = false;
+        }
+
+    }
+}
+
+</script>
+</head>
+
+<body>
+
+<a href="javascript:listen_choice()">선택한 곡 듣기</a>
+<a href="javascript:choice_all()">전체선택</a>
+<a href="javascript:choice_not()">전체해제</a>
+
+<form>
+<table border=1>
+<tr><td>
+<td>no.
+<td>title
+<td>artist
+<td>menu
+<tr><td>
+<input type="checkbox" name="ckeckbox1" value="a"><td>1<td>노래1<td>가수1<td><a href="javascript:listen(a);">듣기</a>
+<tr><td>
+<input type="checkbox" name="ckeckbox1" value="b"><td>2<td>노래2<td>가수2<td><a href="javascript:listen(b);">듣기</a>
+<tr><td>
+<input type="checkbox" name="ckeckbox1" value="c"><td>3<td>노래3<td>가수3<td><a href="javascript:listen(c);">듣기</a>
+<tr><td>
+<input type="checkbox" name="ckeckbox1" value="d"><td>4<td>노래4<td>가수4<td><a href="javascript:listen(d);">듣기</a>
+<tr><td>
+<input type="checkbox" name="ckeckbox1" value="e"><td>5<td>노래5<td>가수5<td><a href="javascript:listen(e);">듣기</a>
+</table>
+</form>
+</body>
+</html>

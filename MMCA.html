@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <title>MMCA</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="basic.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/first.js"></script>
+    <style>
+        #start_title_name {text-align: center; font-weight: bold; margin: 10px 0; font-size: 2em;}
+    </style>
+</head>
+<body>
+    <div id="header_wrap">
+        <header>
+            <div class="header_top">
+                <p class="black_menu"><a href="#">ARTZONE</a></p>
+                <ul class="left_top_menu">
+                    <li><a href="#">국립현대미술관</a></li>
+                    <li><a href="#">국립현대미술관문화재단</a></li>
+                    <li><a href="#">오프라인 아트존</a></li>
+                </ul>
+                <ul class="top_member_box">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li class="service">
+                       <a href="#">
+                            고객센터
+                            <span class="arrow"><img src="img/s_arrow.png" alt="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="global">
+                        <p><img src="img/kor_icon.png" alt="태극기">
+                            KR<span class="line"><!-- 중간선 --></span>한국어
+                            <span class="arrow"><img src="img/s_arrow.png" alt="arrow"></span>
+                        </p>
+                        <div class="top_country">
+                            <ul>
+                                <li>
+                                   <a href="#">
+                                        <img src="img/ico_kr.png" alt="태극기">Korea
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                        <img src="img/ico_us.png" alt="성조기">English
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- header_top END -->
+            <div class="header_btn">
+                <div class="header_main">
+                    <div class="gnb_all">
+                        <input id="gnb_all_ch" type="checkbox">
+                        <label for="gnb_all_ch" class="gnb_all_btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div><!-- gnb_all END -->
+                    
+                    <h1><a href="#"><img src="img/h1.png" alt="미술"></a></h1>
+                    
+                    <div class="right_btn">
+                        <ul>
+                            <li class="scr"><a href="#"></a></li>
+                            <li class="log"><a href="#"></a></li>
+                            <li class="cart"><a href="#"></a></li>
+                            <li class="count"><a href="#">0</a></li>
+                        </ul>
+                    </div><!-- right_btn END --> 
+                </div><!-- header_main END -->
+                
+                <div class="gnb">
+                    <ul class="depth0">
+                        <li><a href="#">신상품
+                            <div class="depth_wrap">
+                                <div class="depth">
+                                    <div class="depth_txt">
+                                        <p class="tit">신상품</p>
+                                        <p class="txt">국립현대미술관의 최근 전시 도록과 상품</p>
+                                    </div>
+                                    <ul class="depth1">
+                                        <li><a href="#">도서</a></li>
+                                        <li><a href="#">전시 상품</a></li>
+                                        <li><a href="#">미술관 상품</a></li>
+                                    </ul>
+                                    <div class="depth_prd">
+                                        <ul>
+                                            <li><a href="#"><img src="img/sub_img/first_1.png" alt="">
+                                            <div class="prd_p">
+                                                <p><strong>양혜규, O₂ & H₂O 리미티드 전시 포스터</strong></p>
+                                                <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                <p>38,000원</p>
+                                            </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/second_2.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <소리 나는 가물 – 솥 겹 솥> 뱃지</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>18,000원</p>
+                                                </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/second_3.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <침묵의 저장고 – 클릭된 속심> 랜티큘러 엽서</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>4,500원</p>
+                                                </div>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a href="#">전시 상품
+                            <div class="depth_wrap">
+                                <div class="depth">
+                                    <div class="depth_txt">
+                                        <p class="tit">전시 상품</p>
+                                        <p class="txt">국립현대미술관의 전시에서 영감을 받은 프리미엄 작가 상품</p>
+                                    </div>
+                                    <ul class="depth1">
+                                        <li><a href="#">MMCA 현대차 시리즈 2020: 양혜규―O2&H2O</a></li>
+                                        <li><a href="#">탄생 100주년 기념: 박래현, 삼중통역자</a></li>
+                                        <li><a href="#">모두를 위한 미술관, 개를 위한 미술관</a></li>
+                                        <li><a href="#">MMCA 소장품 하이라이트 2020+</a></li>
+                                        <li><a href="#">낯선 전쟁</a></li>
+                                        <li><a href="#">또 다른 가족을 찾아서</a></li>
+                                        <li><a href="#">미술관에 書: 한국 근현대 서예전</a></li>
+                                        <li><a href="#">당신을 위하여 : 제니 홀저</a></li>
+                                        <li><a href="#">광장: 미술과 사회 1900-2019</a></li>
+                                        <li><a href="#">박서보: 지칠줄 모르는 수행자</a></li>
+                                        <li><a href="#">과거 전시 상품</a></li>
+                                    </ul>
+                                    <div class="depth_prd">
+                                        <ul>
+                                            <li><a href="#"><img src="img/sub_img/second_1.png" alt="">
+                                            <div class="prd_p">
+                                                <p><strong>양혜규, O₂ & H₂O 리미티드 전시 포스터</strong></p>
+                                                <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                <p>38,000원</p>
+                                            </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/second_2.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <소리 나는 가물 – 솥 겹 솥> 뱃지</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>18,000원</p>
+                                                </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/second_3.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <침묵의 저장고 – 클릭된 속심> 랜티큘러 엽서</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>4,500원</p>
+                                                </div>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a href="#">도서
+                            <div class="depth_wrap">
+                                <div class="depth">
+                                    <div class="depth_txt">
+                                        <p class="tit">도서</p>
+                                        <p class="txt">전시도록, 예술이론서, 필름&비디오</p>
+                                    </div>
+                                    <ul class="depth1">
+                                        <li><a href="#">전시 도록</a></li>
+                                        <li><a href="#">국립현대미술관 연구</a></li>
+                                        <li><a href="#">저널 / 기타</a></li>
+                                    </ul>
+                                    <div class="depth_prd">
+                                        <ul>
+                                            <li><a href="#"><img src="img/sub_img/second_2.png" alt="">
+                                            <div class="prd_p">
+                                                <p><strong>양혜규, O₂ & H₂O 리미티드 전시 포스터</strong></p>
+                                                <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                <p>38,000원</p>
+                                            </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/first_1.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <소리 나는 가물 – 솥 겹 솥> 뱃지</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>18,000원</p>
+                                                </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/second_1.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <침묵의 저장고 – 클릭된 속심> 랜티큘러 엽서</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>4,500원</p>
+                                                </div>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a href="#">미술관 상품
+                            <div class="depth_wrap">
+                                <div class="depth">
+                                    <div class="depth_txt">
+                                        <p class="tit">미술관 상품</p>
+                                        <p class="txt">다양한 연령대를 커버하는 국립현대미술관의 철학과 아이덴티티를 반영한 상품</p>
+                                    </div>
+                                    <ul class="depth1">
+                                        <li><a href="#">NEW</a></li>
+                                        <li><a href="#">문구/사무</a></li>
+                                        <li><a href="#">패브릭</a></li>
+                                        <li><a href="#">액세서리</a></li>
+                                        <li><a href="#">생활용품</a></li>
+                                        <li><a href="#">어린이</a></li>
+                                    </ul>
+                                    <div class="depth_prd">
+                                        <ul>
+                                            <li><a href="#"><img src="img/sub_img/second_3.png" alt="">
+                                            <div class="prd_p">
+                                                <p><strong>양혜규, O₂ & H₂O 리미티드 전시 포스터</strong></p>
+                                                <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                <p>38,000원</p>
+                                            </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/second_1.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <소리 나는 가물 – 솥 겹 솥> 뱃지</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>18,000원</p>
+                                                </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/first_1.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <침묵의 저장고 – 클릭된 속심> 랜티큘러 엽서</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>4,500원</p>
+                                                </div>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a href="#">소장품 상품
+                            <div class="depth_wrap">
+                                <div class="depth">
+                                    <div class="depth_txt">
+                                        <p class="tit">소장품 상품</p>
+                                        <p class="txt">국립현대미술관의 소장품을 아트상품으로 재현한 에디션 상품</p>
+                                    </div>
+                                    <ul class="depth1">
+                                        <li><a href="#">박서보</a></li>
+                                        <li><a href="#">윤형근</a></li>
+                                        <li><a href="#">서세옥</a></li>
+                                        <li><a href="#">곽인식</a></li>
+                                        <li><a href="#">장욱진</a></li>
+                                        <li><a href="#">이중섭</a></li>
+                                    </ul>
+                                    <div class="depth_prd">
+                                        <ul>
+                                            <li><a href="#"><img src="img/sub_img/first_1.png" alt="">
+                                            <div class="prd_p">
+                                                <p><strong>양혜규, O₂ & H₂O 리미티드 전시 포스터</strong></p>
+                                                <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                <p>38,000원</p>
+                                            </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/second_3.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <소리 나는 가물 – 솥 겹 솥> 뱃지</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>18,000원</p>
+                                                </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/second_3.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <침묵의 저장고 – 클릭된 속심> 랜티큘러 엽서</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>4,500원</p>
+                                                </div>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a href="#">기업∙기관 주문
+                            <div class="depth_wrap">
+                                <div class="depth">
+                                    <div class="depth_txt">
+                                        <p class="tit">기관 기업 주문</p>
+                                        <p class="txt">기관 기업 주문 추천 상품</p>
+                                    </div>
+                                    <ul class="depth1">
+                                        <li><a href="#">1만원 - 3만원 미만</a></li>
+                                        <li><a href="#">3만원 - 5만원 미만</a></li>
+                                        <li><a href="#">5만원 이상</a></li>
+                                    </ul>
+                                    <div class="depth_prd">
+                                        <ul>
+                                            <li><a href="#"><img src="img/sub_img/second_1.png" alt="">
+                                            <div class="prd_p">
+                                                <p><strong>양혜규, O₂ & H₂O 리미티드 전시 포스터</strong></p>
+                                                <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                <p>38,000원</p>
+                                            </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/first_1.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <소리 나는 가물 – 솥 겹 솥> 뱃지</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>18,000원</p>
+                                                </div>
+                                            </a></li>
+                                            <li><a href="#"><img src="img/sub_img/second_3.png" alt="">
+                                                <div class="prd_p">
+                                                    <p><strong>양혜규, <침묵의 저장고 – 클릭된 속심> 랜티큘러 엽서</strong></p>
+                                                    <p>MMCA 현대차 시리즈 2020: 양혜규―O2 & H2O</p>
+                                                    <p>4,500원</p>
+                                                </div>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </div><!-- gnb ENd -->
+
+                <!-- gnb_allmenu_wrap(전체메뉴) START -->
+                <div class="gnb_allmenu_wrap">
+                    <div class="depth_all" id="view_menu">
+                        <ul>
+                        <li><a href="#"><strong>신상품</strong>
+                            <ul class="all_sub_menus">
+                                <li><a href="#">도서</a></li>
+                                <li><a href="#">전시 상품</a></li>
+                                <li><a href="#">미술관 상품</a></li>
+                            </ul>
+                        </a></li>
+                        <li class="all_sub_menus_lis"><a href="#"><strong>전시 상품</strong>
+                            <ul class="all_sub_menus">
+                                <li><a href="#">MMCA 현대차 시리즈 2020: 양혜규―O2&H2O</a></li>
+                                <li><a href="#">탄생 100주년 기념: 박래현, 삼중통역자</a></li>
+                                <li><a href="#">모두를 위한 미술관, 개를 위한 미술관</a></li>
+                                <li><a href="#">MMCA 소장품 하이라이트 2020+</a></li>
+                                <li><a href="#">낯선 전쟁</a></li>
+                                <li><a href="#">또 다른 가족을 찾아서</a></li>
+                                <li><a href="#">미술관에 書: 한국 근현대 서예전</a></li>
+                                <li><a href="#">당신을 위하여 : 제니 홀저</a></li>
+                                <li><a href="#">광장: 미술과 사회 1900-2019</a></li>
+                                <li><a href="#">박서보: 지칠줄 모르는 수행자</a></li>
+                                <li><a href="#">과거 전시 상품</a></li>
+                            </ul>
+                            <ul class="all_sub_sub_menus">
+                                <li><a href="#">올해의 작가상 2019</a></li>
+                                <li><a href="#">김순기: 게으른 구름</a></li>
+                                <li><a href="#">젊은모색 2019: 액체 유리 바다</a></li>
+                                <li><a href="#">대안적 언어 – 아스거 욘</a></li>
+                                <li><a href="#">세상에 눈뜨다: 아시아 미술과 사회</a></li>
+                                <li><a href="#">대한제국의 미술-빛의 길을 꿈꾸다</a></li>
+                                <li><a href="#">근대미술가의 재발견1: 절필시대</a></li>
+                                <li><a href="#">내가 사랑한 미술관: 근대의 걸작展</a></li>
+                                <li><a href="#">신여성 도착하다</a></li>
+                                <li><a href="#">현대차 시리즈 2018: 최정화</a></li>
+                                <li><a href="#">김중업 다이얼로그</a></li>
+                                <li><a href="#">마르셀 뒤샹</a></li>
+                                <li><a href="#">탄생 100주년 기념-곽인식</a></li>
+                            </ul>
+                        </a></li>
+                        <li><a href="#"><strong>도서</strong>
+                            <ul class="all_sub_menus">
+                                <li><a href="#">전시 도록</a></li>
+                                <li><a href="#">국립현대미술관 연구</a></li>
+                                <li><a href="#">저널 / 기타</a></li>
+                            </ul>
+                        </a></li>
+                        <li><a href="#"><strong>미술관 상품</strong>
+                            <ul class="all_sub_menus">
+                                <li><a href="#">NEW</a></li>
+                                <li><a href="#">문구/사무</a></li>
+                                <li><a href="#">패브릭</a></li>
+                                <li><a href="#">액세서리</a></li>
+                                <li><a href="#">생활용품</a></li>
+                                <li><a href="#">어린이</a></li>
+                            </ul>
+                        </a></li>
+                        <li><a href="#"><strong>소장품 상품</strong>
+                            <ul class="all_sub_menus">
+                                <li><a href="#">박서보</a></li>
+                                <li><a href="#">윤형근</a></li>
+                                <li><a href="#">서세옥</a></li>
+                                <li><a href="#">곽인식</a></li>
+                                <li><a href="#">장욱진</a></li>
+                                <li><a href="#">이중섭</a></li>
+                            </ul>
+                        </a></li>
+                        <li><a href="#"><strong>기업∙기관 주문</strong>
+                            <ul class="all_sub_menus">
+                                <li><a href="#">1만원 - 3만원 미만</a></li>
+                                <li><a href="#">3만원 - 5만원 미만</a></li>
+                                <li><a href="#">5만원 이상</a></li>
+                            </ul>
+                        </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- gnb_allmenu_wrap(전체메뉴) END -->
+            </div><!-- header_btn ENd -->
+        </header>
+    </div>
+<!-- ############################# #header_wrap END ############################# -->
+   
+    <div id="contents">
+        <div class="mv">
+            <ul>
+                <li><img src="img/img1.jpg" alt=""></li>
+                <!-- <li id="slide"></li>
+                <script>
+                    var a = document.getElementById('slide')
+                    function y() {
+                        var r = 0;
+                        console.log('y')
+                        function run() {
+                            r = (r+1);
+                            setTimeout(2000, 2000); // <--- 딜레이 타임
+                        };
+                        run()
+                        console.log('run')
+                    }
+                    for(var i = 1; i <= 4; i++){
+                        a.innerHTML = '<img src="img/img' + i + '.jpg" alt="">'
+                        y()
+                    }
+                </script> -->
+            </ul>
+        </div> <!-- MAIN_VISUAL(SLIDER) END -->
+        <div class="best_prd">
+            <h3>BEST PRODUCTS</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/goods01.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MMCA 머그 화이트</strong>
+                                <span class="item_price">10,000원</span>
+                                <p class="item_link">ADD TO CART</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/goods02.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MI 미니노트 5종 세트</strong>
+                                <span class="item_price">18,000원</span>
+                                <p class="item_link"><span>ADD TO CART</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/goods03.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MMCA 텀블러 블랙</strong>
+                                <span class="item_price">42,000원</span>
+                                <p class="item_link"><span>ADD TO CART</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/goods04.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MMCA 마스킹테이프 6개 세트</strong>
+                                <span class="item_price">20,000원</span>
+                                <p class="item_link"><span>ADD TO CART</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/goods05.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MMCA 4관 건출물 모티브 마그넷</strong>
+                                <span class="item_price">6,000원</span>
+                                <p class="item_link"><span>ADD TO CART</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/goods06.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MMCA 4관 컬러 원형 마그넷 세트</strong>
+                                <span class="item_price">6,000원</span>
+                                <p class="item_link"><span>ADD TO CART</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/goods07.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MMCA 포켓 노트 화이트</strong>
+                                <span class="item_price">10,000원</span>
+                                <p class="item_link"><span>ADD TO CART</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/goods08.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MMCA 가죽 필통 옐로우</strong>
+                                <span class="item_price">13,000원</span>
+                                <p class="item_link"><span>ADD TO CART</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div> <!-- BEST_PRODUCTS END -->
+        <div class="mid_ban">
+            <a href="#"><img src="img/389f8d53cfb29b2062ee8f0be2907167_67079.gif" alt=""></a>
+        </div> <!-- CENTER_BANNER END -->
+        <div class="new_prd">
+            <h3>NEW_PUBLICATIONS</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/new01.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MMCA 머그 화이트</strong>
+                                <span class="item_price">10,000원</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/new02.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MMCA 머그 화이트</strong>
+                                <span class="item_price">10,000원</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/new03.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MMCA 머그 화이트</strong>
+                                <span class="item_price">10,000원</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/new04.png" alt="">
+                            </div>
+                            <div class="item_info">
+                                <strong class="item_main">MMCA 머그 화이트</strong>
+                                <span class="item_price">10,000원</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div> <!-- NEW_PUBLICATIONS END -->
+        <div class="story_ban">
+            <p class="img">
+                <img src="img/child.png" alt="">
+            </p>
+            <div class="ban_txt">
+                <p class="eng_title">MMCA New Product</p>
+                <p class="kor_title">국립현대미술관 <br> 어린이 상품</p>
+                <p class="kor_txt">이번 출시된 MI를 활용한 새로운 문화상품은 국립현대미술관의 명칭이자 성격을 대변하는 Museum, Modern, Contemporary, Art 4개의 단어를 활용한 것으로, 각 단어의 영문 대문자를 좌우 대칭하여 기존 미술관 아이덴티티를 확장 응용한 그래픽을 적용하였습니다..</p>
+                <p class="more"><a href="#">상품보기</a></p>
+            </div>
+        </div> <!-- BANNER(CHILD_GOODS) END -->
+        <div class="four_ban">
+            <ul>
+                <li class="left_ban"><a href="#"><img src="img/banner01.jpg" alt=""></a></li>
+                <li class="right_ban"><a href="#"><img src="img/banner02.jpg" alt=""></a></li>
+                <li class="left_ban"><a href="#"><img src="img/banner03.jpg" alt=""></a></li>
+                <li class="right_ban"><a href="#"><img src="img/banner04.jpg" alt=""></a></li>
+            </ul>
+        </div> <!-- FOUR_BANNER(FOUR_BANNER) END -->
+        <div class="more_ban">
+            <a href="#" class="more_btn"><h3>MORE_STORIES ></h3></a>
+            <ul>
+                <li><a href="#">
+                    <div class="more_img"><img src="img/story01.png" alt=""></div>
+                    <div class="more_p"><p>《MMCA 소장품 하이라이트 2020+》</p></div> 
+                </a></li>
+                <li><a href="#">
+                    <div class="more_img"><img src="img/story02.png" alt=""></div>
+                    <div class="more_p"><p>《미술관에 書: 한국 근현대 서예전》</p></div>
+                </a></li>
+                <li><a href="#">
+                    <div class="more_img"><img src="img/story03.png" alt=""></div>
+                    <div class="more_p"><p>《당신을 위하여: 제니 홀저》</p></div>
+                </a></li>
+            </ul>
+        </div> <!-- MORE_STORIES END -->
+    </div>
+<!-- ############################# #contents END ################################ -->
+   
+    <div id="footer_wrap">
+        <footer>
+            <div class="footer_img">
+                <img src="img/footer_logo.png" alt="">
+            </div>
+            <div class="footer_link">
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+            </div>
+            <div class="footer_p">
+                회사명 : (재)국립현대미술관문화재단 | 대표자 : 윤범모 | 사업자등록번호 : 101-82-22996 사업자번호조회 ><br>
+                주소 : 서울특별시 종로구 삼청로 30 국립현대미술관 아트존 | 개인정보관리책임자 : 이재탁<br>
+                통신판매신고업 : 제2020-서울종로-1177호 | 고객센터 : 02-720-9870 | 이메일 : <a href="#">mmcashop@mmcafoundation.or.kr</a> 
+            </div>
+            
+            <div class="footer_sns">
+                <ul>
+                    <li><a href="#"><img src="img/foot_fb.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/foot_insta.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/foot_yt.png" alt=""></a></li>
+                </ul>
+            </div>
+            <address>Copyright ⓒ MMCA Foundation. All Rights Reserved.</address>
+        </footer>
+        <div class="up_btn">
+            <a href="#">^</a>
+        </div>
+    </div>
+<!-- ############################# #footer_wrap END ############################# -->
+
+</body>
+</html>
